@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Include shared preferences -->
+    <include domain="sharedpref" path="."/>
+    
+    <!-- Include internal app files -->
+    <include domain="file" path="."/>
+    
+    <!-- Exclude sensitive files -->
+    <exclude domain="database"/>
+    <exclude domain="file" path="sensitive/"/>
+    <exclude domain="file" path="temp/"/>
+    <exclude domain="file" path="cache/"/>
+    
+    <!-- Exclude logs -->
+    <exclude domain="file" path="logs/"/>
+</full-backup-content>
