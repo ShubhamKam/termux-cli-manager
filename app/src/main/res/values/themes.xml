@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.TermuxCLIManager" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Theme.TermuxCLIManager" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Override point for customization after application creation. -->
     </style>
     
