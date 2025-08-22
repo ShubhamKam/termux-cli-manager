@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Termux CLI Manager</string>
+    <string name="cli_manager_settings">CLI Manager Settings</string>
+    
+    <!-- CLI Tools -->
+    <string name="claude_cli">Claude CLI</string>
+    <string name="cursor_cli">Cursor CLI</string>
+    <string name="huggingface_cli">HuggingFace CLI</string>
+    
+    <!-- Actions -->
+    <string name="install">Install</string>
+    <string name="activate">Activate</string>
+    <string name="deactivate">Deactivate</string>
+    <string name="open_ui">Open UI</string>
+    <string name="refresh">Refresh</string>
+    <string name="send">Send</string>
+    <string name="clear">Clear</string>
+    
+    <!-- Status -->
+    <string name="active">Active</string>
+    <string name="inactive">Inactive</string>
+    <string name="installed">Installed</string>
+    <string name="not_installed">Not Installed</string>
+    
+    <!-- Navigation -->
+    <string name="back">Back</string>
+    <string name="home">Home</string>
+    <string name="sessions">Sessions</string>
+    <string name="file_system">File System</string>
+    
+    <!-- Messages -->
+    <string name="type_message_hint">Type a command or message...</string>
+    <string name="session_inactive">Session inactive</string>
+    <string name="no_sessions">No Active Sessions</string>
+    <string name="empty_directory">Empty Directory</string>
+    <string name="processing">Processing...</string>
+    
+    <!-- Errors -->
+    <string name="error_install_failed">Failed to install %1$s</string>
+    <string name="error_activation_failed">Failed to activate %1$s</string>
+    <string name="error_send_message_failed">Failed to send message</string>
+    <string name="error_load_directory_failed">Failed to load directory</string>
+    
+    <!-- Notifications -->
+    <string name="notification_cli_manager_active">CLI Manager Active</string>
+    <string name="notification_managing_tools">Managing CLI tools and sessions</string>
+</resources>
