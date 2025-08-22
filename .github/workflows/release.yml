@@ -27,7 +27,7 @@ jobs:
         path: |
           ~/.gradle/caches
           ~/.gradle/wrapper
-        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties', '**/*.gradle') }}
         restore-keys: |
           ${{ runner.os }}-gradle-
           
@@ -40,7 +40,7 @@ jobs:
       
     - name: Update version in build.gradle
       run: |
-        sed -i "s/versionName \".*\"/versionName \"${{ steps.version.outputs.version }}\"/" app/build.gradle.kts
+        sed -i "s/versionName \".*\"/versionName \"${{ steps.version.outputs.version }}\"/" app/build.gradle
         
     - name: Build release APK
       run: gradle assembleRelease || ./gradlew assembleRelease
